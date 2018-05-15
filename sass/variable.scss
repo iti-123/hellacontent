@@ -1,0 +1,28 @@
+﻿$hella_blue:#0f3774;
+$hella_yellow:#ffc728;
+$hella_color_text_yellow:#ce972d;
+$hella_light_gray:#dfe4e8;
+$hella_red:#be2814;
+$font_family_open:'Open Sans', sans-serif;
+$titanium1:#91a5af;
+$titanium2:#bdc9cf;
+@mixin transition($transition) {
+    -moz-transition: $transition;
+    -o-transition: $transition;
+    -webkit-transition: $transition;
+    transition: $transition;
+}
+
+@mixin transform($transform) {
+    -moz-transform: $transform;
+    -ms-transform: $transform;
+    -o-transform: $transform;
+    -webkit-transform: $transform;
+    transform: $transform;
+}
+
+@mixin border-radius($radius) {
+    -moz-border-radius: $radius;
+    -webkit-border-radius: $radius;
+    border-radius: $radius;
+}

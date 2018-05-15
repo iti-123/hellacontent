@@ -1,0 +1,455 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/StyleSheet.min.css" rel="stylesheet" />
+    <link href="fontawesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <link href="css/jquery-ui.css" rel="stylesheet" />
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(window).bind('scroll', function () {
+                var w_h = $(window).height() - 100;
+
+                var scroll_h = $(window).height() - w_h;
+                if ($(window).scrollTop() > scroll_h) {
+                    $(".top_row").addClass("top_hide");
+                    //$(".top_cat_row").addClass("top_m");
+
+                }
+                else {
+                    $(".top_row").removeClass("top_hide");
+                    //$(".top_cat_row").removeClass("top_m");
+
+                }
+            });
+        });
+    </script>
+    <script>
+	$( function() {
+		$( "#slider-range" ).slider({
+			range: true,
+			min: 300,
+			max: 50000,
+			values: [ 300, 3000 ],
+			slide: function( event, ui ) {
+				$( "#amount" ).val( "Rs." + ui.values[ 0 ] + " - Rs." + ui.values[ 1 ] );
+			}
+		});
+		$( "#amount" ).val( "Rs." + $( "#slider-range" ).slider( "values", 0 ) +
+			" - Rs." + $( "#slider-range" ).slider( "values", 1 ) );
+	} );
+    </script>
+</head>
+<body>
+    <div class="query_btn">
+        <ul>
+            <li>Q</li>
+            <li>u</li>
+            <li>e</li>
+            <li>r</li>
+            <li>y</li>
+        </ul>
+    </div>
+    <div class="wrapper_bg">
+        <div class="fixed_d fixed">
+            <div class="wrapper top_row">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="social_link">
+                            <ul>
+                                <li><a class="facebook" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a class="twitter" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a class="linkdin" href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                <li><a class="instagram" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                <li><a class="youtube" href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="contact_top">
+                            <ul>
+                               <li><a href="#">Become HELLA Retailer</a></li>
+                                <li><i class="fa fa-phone" aria-hidden="true"></i> 1800-103-5405</li>
+                                <li><a href="mailto:Careindia.IAM@hella.com"><i class="fa fa-envelope" aria-hidden="true"></i>E-mail</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper nav_header">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="logo">
+                                <div class="link_icon"><span></span></div>
+                                <div class="logo_img">
+                                    <a href="#"><img src="images/shop4hella_logo.jpg" /></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="top_y_link">
+                                <ul>
+                                    <li><a href="#" class="sign_in">Sign up / Sign In</a></li>
+                                    <li><a href="#" class="cart">Shop Cart</a></li>
+                                    <li><a href="#" class="wallet">Wallet</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <div class="top_y2_link">
+                                    <div class="col-lg-6">
+                                        <ul>
+                                            <li><a href="#">Home</a></li>
+                                            <li class="dropM">
+                                                <a href="#">Download</a>
+                                                <div class="sub_m">
+                                                    <ul>
+                                                        <li><a href="#">Sample text</a></li>
+                                                        <li><a href="#">Sample text</a></li>
+                                                        <li><a href="#">Sample text</a></li>
+                                                        <li><a href="#">Sample text</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="dropM">
+                                                <a href="#">Services</a>
+                                                <div class="sub_m">
+                                                    <ul>
+                                                        <li><a href="#">Sample text</a></li>
+                                                        <li><a href="#">Sample text</a></li>
+                                                        <li><a href="#">Sample text</a></li>
+                                                        <li><a href="#">Sample text</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="top_search">
+                                            <input type="text" class="t_search" />
+                                            <a href="javascript:void()" class="t_search_btn"><i class="fa fa-search" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper search_row page_m_top">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="search_row_text">Shop By Vehicle</div>
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="search_in_text s1">Construction & mining</div>
+                        <div class="search_in_text s2">Ashok leyland</div>
+                        <div class="search_in_text s3">2516 XL</div>
+                        <div class="search_in_text s4">XL</div>
+                        <div class="search_in_text s5">Diesel</div>
+                        <div class="search_in_text s6">Horn</div>
+                        <input id="Submit1" type="submit" value="Search" class="search_row_btn" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="page_banner">
+                <img src="images/page_banner.jpg" />
+            </div>
+        </div>
+        <div class="wrapper page_top_padding">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <ul class="breadcrumb_n">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Home</a></li>
+                            <li>Listing</li>
+                        </ul>
+
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="left_filter_nav">
+                            <div class="filter_n">
+                                <div class="filter_t">Categories</div>
+                                <div class="filter_text">
+                                    <ul class="cate_filter">
+                                        <li>
+                                            <a href="#">Head lamp</a>
+                                            <ul>
+                                                <li><a href="#">Head lamp</a></li>
+                                                <li><a href="#">Head lamp</a></li>
+                                                <li><a href="#">Head lamp</a></li>
+                                                <li><a href="#">Head lamp</a></li>
+                                                <li><a href="#">Head lamp</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Head lamp</a></li>
+                                        <li><a href="#">Head lamp</a></li>
+                                        <li><a href="#">Head lamp</a></li>
+                                        <li><a href="#">Head lamp</a></li>
+                                        <li><a href="#">Head lamp</a></li>
+                                        <li><a href="#">Head lamp</a></li>
+                                        <li><a href="#">Head lamp</a></li>
+                                        <li><a href="#">Head lamp</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="filter_n">
+                                <div class="filter_t">Price Range</div>
+                                <div class="filter_text">
+                                    <div class="range_sl"><div id="slider-range"></div></div>
+                                    <input type="text" id="amount" readonly class="p_range_input">
+
+                                </div>
+                            </div>
+                            <div class="filter_n">
+                                <div class="filter_t">Segment</div>
+                                <div class="filter_text">
+                                    <ul class="cate_filter">
+                                        <li>
+                                            <input type="checkbox" id="s1" class="check_box" />
+                                            <label for="s1">Two Wheeler</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="s2" class="check_box" />
+                                            <label for="s2">Three Wheeler</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="s3" class="check_box" />
+                                            <label for="s3">Four Wheeler</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="s4" class="check_box" />
+                                            <label for="s4">Commercial Vehicle</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="s5" class="check_box" />
+                                            <label for="s5">Agriculture</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="s6" class="check_box" />
+                                            <label for="s6">Construction & Mining</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="s7" class="check_box" />
+                                            <label for="s7">Tools & Equipments</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="s8" class="check_box" />
+                                            <label for="s8">Quick Fit Service</label>
+                                        </li>
+                                    </ul>
+
+
+                                </div>
+                            </div>
+                            <div class="filter_n">
+                                <div class="filter_t">Compare</div>
+                                <div class="filter_text">
+                                    <div class="com_pro">Product <span class="s_text">0</span></div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="short_by">
+                            <div class="short_by_d">
+                                Sort By <i class="fa fa-filter" aria-hidden="true"></i>
+                                <div class="short_by_menu">
+                                    <ul>
+                                        
+                                        <li><a href="#">Newest</a></li>
+                                        <li><a href="#">Price : Low to High </a></li>
+                                        <li><a href="#">Price : High to low</a></li>
+                                        <li><a href="#">Rating</a></li>
+                                       
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="base_page">
+                            <div class="page_name">Listing</div>
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="pro_list">
+                                        <a href="#">
+                                            <div class="pro_imag">
+                                                <img src="images/pro_img.jpg" />
+                                            </div>
+                                        </a>
+                                        <div class="pro_text">
+                                            <a href="#">HELLA 010021311 Battery FF60* 12V 45AH 55B24LS</a>
+                                        </div>
+                                        <div class="pro_price">
+                                            <i class="fa fa-inr" aria-hidden="true"></i> 45000
+                                        </div>
+                                        <div class="por_ac_icon">
+                                            <div class="ac_icon">
+                                                <div class="pro_rating">
+                                                    <div class="rating_fill" style="width:25%;"></div>
+                                                    <div class="rating_em"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="ac_icon ac_2">
+                                                <div class="ac_icon_link"> <i class="fa fa-files-o" aria-hidden="true"></i></div>
+                                                <div class="ac_icon_link">
+                                                    <i class="fa fa-heart" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="pro_list">
+                                        <a href="#">
+                                            <div class="pro_imag">
+                                                <img src="images/pro_img.jpg" />
+                                            </div>
+                                        </a>
+                                        <div class="pro_text">
+                                            <a href="#">HELLA 010021311 Battery FF60* 12V 45AH 55B24LS</a>
+                                        </div>
+                                        <div class="pro_price">
+                                            <i class="fa fa-inr" aria-hidden="true"></i> 45000
+                                        </div>
+                                        <div class="por_ac_icon">
+                                            <div class="ac_icon">
+                                                <div class="pro_rating">
+                                                    <div class="rating_fill" style="width:50%;"></div>
+                                                    <div class="rating_em"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="ac_icon ac_2">
+                                                <div class="ac_icon_link"> <i class="fa fa-files-o" aria-hidden="true"></i></div>
+                                                <div class="ac_icon_link">
+                                                    <i class="fa fa-heart" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper page_top_padding footer">
+            <div class="container-fluid">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="foo_link">
+                                <ul class="f_link">
+                                    <li class="head">Site link</li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">Contact us</a></li>
+                                    <li><a href="#">Career</a></li>
+                                    <li><a href="#">Awards</a></li>
+                                    <li><a href="#">Testimonials</a></li>
+                                    <li><a href="#">Video</a></li>
+                                    <li><a href="#">VIP lounge</a></li>
+                                    <li><a href="#">HELLA Location in India</a></li>
+                                    <li><a href="#">Terms & Condition</a></li>
+                                    <li><a href="#">Privacy Policy </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+
+                            <div class="foo_link">
+                                <ul class="f_link">
+                                    <li class="head">Site link</li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">Contact us</a></li>
+                                    <li><a href="#">Career</a></li>
+                                    <li><a href="#">Awards</a></li>
+                                    <li><a href="#">Testimonials</a></li>
+                                    <li><a href="#">Video</a></li>
+                                    <li><a href="#">VIP lounge</a></li>
+                                    <li><a href="#">HELLA Location in India</a></li>
+                                    <li><a href="#">Terms & Condition</a></li>
+                                    <li><a href="#">Privacy Policy </a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-3">
+                            <div class="foo_link">
+                                <ul class="f_link">
+                                    <li class="head">Segment</li>
+                                    <li><a href="#">Two wheeler</a></li>
+                                    <li><a href="#">Three wheeler</a></li>
+                                    <li><a href="#">Four wheeler</a></li>
+                                    <li><a href="#">Commercial Vehicle</a></li>
+                                    <li><a href="#">Agriculture</a></li>
+                                    <li><a href="#">Construction & Mining</a></li>
+                                    <li class="head">Social Connect</li>
+                                    <li class="social_link">
+                                        <ul>
+                                            <li><a class="facebook" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                            <li><a class="twitter" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                            <li><a class="linkdin" href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                            <li><a class="instagram" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                            <li><a class="youtube" href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3">
+                            <div class="add_ress">
+                                <div class="addr_in">
+                                    <ul class="addr_text">
+                                        <li>
+                                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                            <b><span style="text-transform:uppercase">Hella</span> India Lighting Ltd.</b><br />
+                                            6A, 6th Floor, Platinum Tower,<br />
+                                            184 Udyog Vihar Phase - 1,<br />
+                                            Gurgaon – 122016 (Haryana).
+                                        </li>
+                                        <li><i class="fa fa-phone" aria-hidden="true"></i><b>Toll-Free: 1800-103-5405</b></li>
+                                        <li><i class="fa fa-envelope" aria-hidden="true"></i>Careindia.IAM@hella.com</li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper page_top_padding foo_copy">
+            <p>© 2017 Shop4Hella. All Rights Reserved.</p>
+            <div class="live_chat"><i class="fa fa-weixin" aria-hidden="true"></i> Live Assistance</div>
+        </div>
+    </div>
+
+</body>
+</html>

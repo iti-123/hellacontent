@@ -1,0 +1,731 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/StyleSheet.min.css" rel="stylesheet" />
+    <link href="fontawesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(window).bind('scroll', function () {
+                var w_h = $(window).height() - 100;
+                //alert("ddd");
+                var scroll_h = $(window).height() - w_h;
+                if ($(window).scrollTop() > scroll_h) {
+                    $(".top_row").addClass("top_hide");
+                    //$(".top_cat_row").addClass("top_m");
+
+                }
+                else {
+                    $(".top_row").removeClass("top_hide");
+                    //$(".top_cat_row").removeClass("top_m");
+
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="query_btn">
+        <ul>
+            <li>Q</li>
+            <li>u</li>
+            <li>e</li>
+            <li>r</li>
+            <li>y</li>
+        </ul>
+    </div>
+    <div class="wrapper_bg">
+        <div class="fixed_d fixed">
+            <div class="wrapper top_row">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="social_link">
+                            <ul>
+                                <li><a class="facebook" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a class="twitter" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a class="linkdin" href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                <li><a class="instagram" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                <li><a class="youtube" href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="contact_top">
+                            <ul>
+                                <li class="sell"><a href="#">Want to sell HELLA Product</a></li>
+                                <li><i class="fa fa-phone" aria-hidden="true"></i> 1800-103-5405</li>
+                                <li><a href="mailto:Careindia.IAM@hella.com"><i class="fa fa-envelope" aria-hidden="true"></i>E-mail</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper nav_header">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="logo">
+                                <div class="link_icon"><span></span></div>
+                                <div class="logo_img">
+                                    <a href="#"><img src="images/shop4hella_logo.jpg" /></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="top_y_link">
+                                <ul>
+                                    <li><a href="#" class="sign_in">Sign up / Sign In</a></li>
+                                    <li><a href="#" class="cart">Shop Cart</a></li>
+                                    <li><a href="#" class="wallet">Wallet</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <div class="top_y2_link">
+                                    <div class="col-lg-6">
+                                        <ul>
+                                            <li><a href="#" class="home_icon"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+                                            <li><a href="#">About Us</a></li>
+                                            <li class="dropM">
+                                                <a href="#">Download</a>
+                                                <div class="sub_m">
+                                                    <ul>
+                                                        <li><a href="#">Sample text</a></li>
+                                                        <li><a href="#">Sample text</a></li>
+                                                        <li><a href="#">Sample text</a></li>
+                                                        <li><a href="#">Sample text</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="dropM">
+                                                <a href="#">Services</a>
+                                                <div class="sub_m">
+                                                    <ul>
+                                                        <li><a href="#">Sample text</a></li>
+                                                        <li><a href="#">Sample text</a></li>
+                                                        <li><a href="#">Sample text</a></li>
+                                                        <li><a href="#">Sample text</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                           
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="top_search">
+                                            <input type="text" class="t_search" />
+                                            <a href="javascript:void()" class="t_search_btn"><i class="fa fa-search" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper top_cat_row top_m">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="cate_box sep_line">
+                        <a href="#">
+                            <div class="top_cat_box">
+                                <div class="top_cat_img"><img src="images/tw_img.png" alt="" /></div>
+                                <div class="top_cat_text">Two Wheeler</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="cate_box sep_line">
+                        <a href="#">
+                            <div class="top_cat_box">
+                                <div class="top_cat_img"><img src="images/th_img.png" alt="" /></div>
+                                <div class="top_cat_text">Three Wheeler</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="cate_box sep_line">
+                        <a href="#">
+                            <div class="top_cat_box">
+                                <div class="top_cat_img"><img src="images/fr_img.png" alt="" /></div>
+                                <div class="top_cat_text">Four Wheeler</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="cate_box sep_line">
+                        <a href="#">
+                            <div class="top_cat_box">
+                                <div class="top_cat_img"><img src="images/cr_img.png" alt="" /></div>
+                                <div class="top_cat_text">Commercial Vehicle</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="cate_box sep_line">
+                        <a href="#">
+                            <div class="top_cat_box">
+                                <div class="top_cat_img"><img src="images/ag_img.png" alt="" /></div>
+                                <div class="top_cat_text">Agriculture</div>
+                            </div>
+                        </a>
+                    </div>
+                  
+                    <div class="cate_box sep_line">
+                        <a href="#">
+                            <div class="top_cat_box">
+                                <div class="top_cat_img"><img src="images/cm_img.png" alt="" /></div>
+                                <div class="top_cat_text">Construction & Mining</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="cate_box sep_line">
+                        <a href="#">
+                            <div class="top_cat_box">
+                                <div class="top_cat_img"><img src="images/tools.png" alt="" /></div>
+                                <div class="top_cat_text">Tools & Equipments</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="cate_box">
+                        <a href="#">
+                            <div class="top_cat_box">
+                                <div class="top_cat_img"><img src="images/quick_fit.png" alt="" /></div>
+                                <div class="top_cat_text">Quick Fit Service</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper search_row">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="search_row_text">Shop By Vehicle</div>
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="search_in_text s1">Construction & mining</div>
+                        <div class="search_in_text s2">Ashok leyland</div>
+                        <div class="search_in_text s3">2516 XL</div>
+                        <div class="search_in_text s4">XL</div>
+                        <div class="search_in_text s5">Diesel</div>
+                        <div class="search_in_text s6">Horn</div>
+                        <input id="Submit1" type="submit" value="Search" class="search_row_btn" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper page_content page_top_padding">
+            <div class="container-fluid">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="row">
+                                <div class="left_cate">
+                                    <ul>
+                                        <li class="head">Categories</li>
+                                        <li><a href="#">Battery</a></li>
+                                        <li><a href="#">Brake Parts</a></li>
+                                        <li><a href="#">Bulbs</a></li>
+                                        <li><a href="#">Driving Lamps</a></li>
+                                        <li><a href="#">Fog Lamps</a></li>
+                                        <li><a href="#">Head Lamp Beam</a></li>
+                                        <li><a href="#">Head Lamps</a></li>
+                                        <li><a href="#">Horns</a></li>
+                                        <li><a href="#">Reflex Reflector</a></li>
+                                        <li><a href="#">Relay / Switches</a></li>
+                                      
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="row">
+
+                                <div class="baner_img">
+                                    <div class="app_store">
+                                        <a href="#" class="iphone_app"></a>
+                                        <a href="#" class="android_app"></a>
+                                    </div>
+                                    <img src="images/banner1.jpg" />
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="sep_div page_top_padding">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="Mobile_Mechanic">
+                                        <div class="title_head"><div class="title_h">Your Mobile Mechanic</div></div>
+                                        <div class="box">
+                                            <img src="images/mobile_service.jpg" class="big_img" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="Mobile_Mechanic">
+                                        <div class="title_head"><div class="title_h">Find Your Nearest HELLA</div></div>
+                                        <div class="box find_bg">
+                                            <div class="col-lg-8">
+                                                <div class="input_div">
+                                                    <select>
+                                                        <option>Search Type</option>
+
+                                                    </select>
+                                                </div>
+                                                <div class="input_div">
+                                                    <input type="text" value="" placeholder="Enter your location" />
+                                                </div>
+                                                <div class="input_div">
+                                                    <input id="Submit1" type="submit" value="Submit" class="find_submit" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sep_div page_top_padding margin_top_15">
+                            <div class="row_title">
+                                <h2><span class="s1">Top Selling Product</span></h2>
+                            </div>
+                            <div class="product_row">
+                                <div class="pro_box">
+                                    <div class="pro_box_in">
+                                        <div class="pro_img_bg">
+                                            <div class="pro_img">
+                                                <img src="images/top_pro1.jpg" />
+
+                                            </div>
+                                        </div>
+                                        <div class="pro_text">
+                                            <div class="pro_t1">
+                                                HELLA Signature Red
+                                                Grill Horn Set
+                                            </div>
+                                            <div class="pro_t2">
+                                                <i class="fa fa-inr" aria-hidden="true"></i> 2,449.00
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pro_box">
+                                    <div class="pro_box_in">
+                                        <div class="pro_img_bg">
+                                            <div class="pro_img">
+                                                <img src="images/top_pro1.jpg" />
+
+                                            </div>
+                                        </div>
+                                        <div class="pro_text">
+                                            <div class="pro_t1">
+                                                HELLA Signature Red
+                                                Grill Horn Set
+                                            </div>
+                                            <div class="pro_t2">
+                                                <i class="fa fa-inr" aria-hidden="true"></i> 2,449.00
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pro_box">
+                                    <div class="pro_box_in">
+                                        <div class="pro_img_bg">
+                                            <div class="pro_img">
+                                                <img src="images/top_pro1.jpg" />
+
+                                            </div>
+                                        </div>
+                                        <div class="pro_text">
+                                            <div class="pro_t1">
+                                                HELLA Signature Red
+                                                Grill Horn Set
+                                            </div>
+                                            <div class="pro_t2">
+                                                <i class="fa fa-inr" aria-hidden="true"></i> 2,449.00
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pro_box">
+                                    <div class="pro_box_in">
+                                        <div class="pro_img_bg">
+                                            <div class="pro_img">
+                                                <img src="images/top_pro1.jpg" />
+
+                                            </div>
+                                        </div>
+                                        <div class="pro_text">
+                                            <div class="pro_t1">
+                                                HELLA Signature Red
+                                                Grill Horn Set
+                                            </div>
+                                            <div class="pro_t2">
+                                                <i class="fa fa-inr" aria-hidden="true"></i> 2,449.00
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pro_box">
+                                    <div class="pro_box_in">
+                                        <div class="pro_img_bg">
+                                            <div class="pro_img">
+                                                <img src="images/top_pro1.jpg" />
+
+                                            </div>
+                                        </div>
+                                        <div class="pro_text">
+                                            <div class="pro_t1">
+                                                HELLA Signature Red
+                                                Grill Horn Set
+                                            </div>
+                                            <div class="pro_t2">
+                                                <i class="fa fa-inr" aria-hidden="true"></i> 2,449.00
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sep_div page_top_padding">
+                            <div class="row_title">
+                                <h2><span class="s2">Popular Product</span></h2>
+                            </div>
+                            <div class="product_row">
+                                <div class="pro_box">
+                                    <div class="pro_box_in">
+                                        <div class="pro_img_bg">
+                                            <div class="pro_img">
+                                                <img src="images/top_pro1.jpg" />
+
+                                            </div>
+                                        </div>
+                                        <div class="pro_text">
+                                            <div class="pro_t1">
+                                                HELLA Signature Red
+                                                Grill Horn Set
+                                            </div>
+                                            <div class="pro_t2">
+                                                <i class="fa fa-inr" aria-hidden="true"></i> 2,449.00
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pro_box">
+                                    <div class="pro_box_in">
+                                        <div class="pro_img_bg">
+                                            <div class="pro_img">
+                                                <img src="images/top_pro1.jpg" />
+
+                                            </div>
+                                        </div>
+                                        <div class="pro_text">
+                                            <div class="pro_t1">
+                                                HELLA Signature Red
+                                                Grill Horn Set
+                                            </div>
+                                            <div class="pro_t2">
+                                                <i class="fa fa-inr" aria-hidden="true"></i> 2,449.00
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pro_box">
+                                    <div class="pro_box_in">
+                                        <div class="pro_img_bg">
+                                            <div class="pro_img">
+                                                <img src="images/top_pro1.jpg" />
+
+                                            </div>
+                                        </div>
+                                        <div class="pro_text">
+                                            <div class="pro_t1">
+                                                HELLA Signature Red
+                                                Grill Horn Set
+                                            </div>
+                                            <div class="pro_t2">
+                                                <i class="fa fa-inr" aria-hidden="true"></i> 2,449.00
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pro_box">
+                                    <div class="pro_box_in">
+                                        <div class="pro_img_bg">
+                                            <div class="pro_img">
+                                                <img src="images/top_pro1.jpg" />
+
+                                            </div>
+                                        </div>
+                                        <div class="pro_text">
+                                            <div class="pro_t1">
+                                                HELLA Signature Red
+                                                Grill Horn Set
+                                            </div>
+                                            <div class="pro_t2">
+                                                <i class="fa fa-inr" aria-hidden="true"></i> 2,449.00
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pro_box">
+                                    <div class="pro_box_in">
+                                        <div class="pro_img_bg">
+                                            <div class="pro_img">
+                                                <img src="images/top_pro1.jpg" />
+
+                                            </div>
+                                        </div>
+                                        <div class="pro_text">
+                                            <div class="pro_t1">
+                                                HELLA Signature Red
+                                                Grill Horn Set
+                                            </div>
+                                            <div class="pro_t2">
+                                                <i class="fa fa-inr" aria-hidden="true"></i> 2,449.00
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sep_div page_top_padding">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="vip_l">
+                                        <a href="#">
+                                            <img src="images/vip.jpg" />
+
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="business_m">
+                                        <a href="#">
+
+                                            <img src="images/business.jpg" />
+
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sep_div page_top_padding">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="Mobile_Mechanic">
+                                        <div class="title_head"><div class="title_h th_2">News & Events</div></div>
+                                        <div class="box news_event">
+                                            <ul>
+                                                <li>
+                                                    <p>HELLA India Automotive: Emission Control Systems To Meet Regulations</p>
+                                                    <p><a href="#">Readmore</a> <span>17-04-2017</span></p>
+                                                </li>
+                                                <li>
+                                                    <p>HELLA India Automotive: Emission Control Systems To Meet Regulations</p>
+                                                    <p><a href="#">Readmore</a> <span>17-04-2017</span></p>
+                                                </li>
+                                                <li>
+                                                    <p>HELLA India Automotive: Emission Control Systems To Meet Regulations</p>
+                                                    <p><a href="#">Readmore</a> <span>17-04-2017</span></p>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="Mobile_Mechanic">
+                                        <div class="title_head"><div class="title_h th_2">Connect HELLA on YouTube</div></div>
+                                        <div class="box you_tub">
+                                            <div class="you_tube_d">
+                                                <img src="images/you_tube.jpg"  />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="face_book">
+
+                                        <img src="images/facebook.jpg" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sep_div page_top_padding">
+                            <div class="row_title">
+                                <h2 class="t_center"><span class="s3">Testimonials</span></h2>
+                            </div>
+                            <div class="col-lg-1">&nbsp;</div>
+                            <div class="col-lg-10">
+                                <div class="testimonial">
+                                    <div class="testi_img_bg">
+                                        <div class="testi_img">
+                                            <img src="images/testi_img.png" />
+                                        </div>
+                                        <div class="tes_name">Someone famous</div>
+                                        <div class="tes_date">17-04-2017</div>
+                                    </div>
+                                    <div class="testim_text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. !
+                                    </div>
+                                    <div class="testm_ul">
+                                        <ul>
+                                            <li class="active"></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="wrapper page_top_padding down_app">
+            <div class="container-fluid">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-1">&nbsp;</div>
+                        <div class="col-lg-10">
+                            <div class="col-lg-4">
+                                <div class="down_aap_img">
+                                    <img src="images/mobile_img.png" />
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="d_app_text">
+                                    <div class="app_text_big">Personal hella product adviser ! </div>
+                                    <div class="app_text_sm">
+                                        Experience and discover hella ‘S products range<br />
+                                        Using this innovative app
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <a href="#" class="app_btn ap1"><i class="fa fa-apple" aria-hidden="true"></i>iphone</a>
+                                </div>
+                                <div class="col-lg-6">
+                                    <a href="#" class="app_btn ap2"><i class="fa fa-android" aria-hidden="true"></i>Android</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper page_top_padding footer">
+            <div class="container-fluid">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="foo_link">
+                                <ul class="f_link">
+                                    <li class="head">Site link</li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">Contact us</a></li>
+                                    <li><a href="#">Career</a></li>
+                                    <li><a href="#">Awards</a></li>
+                                    <li><a href="#">Testimonials</a></li>
+                                    <li><a href="#">Video</a></li>
+                                    <li><a href="#">VIP lounge</a></li>
+                                    <li><a href="#">HELLA Location in India</a></li>
+                                    <li><a href="#">Terms & Condition</a></li>
+                                    <li><a href="#">Privacy Policy </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+
+                            <div class="foo_link">
+                                <ul class="f_link">
+                                    <li class="head">Download</li>
+                                    <li><a href="#">E-catalog</a></li>
+                                    <li><a href="#">Event</a></li>
+                                    <li><a href="#">Do it yourself</a></li>
+                                    <li>&nbsp;</li>
+                                   
+                                    <li class="head">Services</li>
+                                    <li><a href="#">Warranty Registration</a></li>
+                                    <li><a href="#">Product Verification</a></li>
+                                    <li><a href="#">Service Center Search</a></li>
+                                    
+                                    <li><a href="#">Retaile Search</a></li>
+                                    <li><a href="#">Distibutor Search</a></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-3">
+                            <div class="foo_link">
+                                <ul class="f_link">
+                                    <li class="head">Segment</li>
+                                    <li><a href="#">Two wheeler</a></li>
+                                    <li><a href="#">Three wheeler</a></li>
+                                    <li><a href="#">Four wheeler</a></li>
+                                    <li><a href="#">Commercial Vehicle</a></li>
+                                    <li><a href="#">Agriculture</a></li>
+                                    <li><a href="#">Construction & Mining</a></li>
+                                    <li>&nbsp;</li>
+                                    <li class="head">Social Connect</li>
+                                    <li class="social_link">
+                                        <ul>
+                                            <li><a class="facebook" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                            <li><a class="twitter" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                            <li><a class="linkdin" href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                            <li><a class="instagram" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                            <li><a class="youtube" href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3">
+                            <div class="add_ress">
+                                <div class="addr_in">
+                                    <ul class="addr_text">
+                                        <li>
+                                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                            <b><span style="text-transform:uppercase">Hella</span> India Lighting Ltd.</b><br />
+                                            6A, 6th Floor, Platinum Tower,<br />
+                                            184 Udyog Vihar Phase - 1,<br />
+                                            Gurgaon – 122016 (Haryana).
+                                        </li>
+                                        <li><i class="fa fa-phone" aria-hidden="true"></i><b>Toll-Free: 1800-103-5405</b></li>
+                                        <li><a href="mailto:Careindia.IAM@hella.com"><i class="fa fa-envelope" aria-hidden="true"></i>E-mail</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper page_top_padding foo_copy">
+            <p>© 2017 Shop4Hella. All Rights Reserved.</p>
+            <div class="live_chat"><i class="fa fa-weixin" aria-hidden="true"></i> Live Assistance</div>
+        </div>
+    </div>
+
+</body>
+</html>
